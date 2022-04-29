@@ -22,6 +22,6 @@ The additional 3rd report I chose to create was a table showing a count of custo
 
 ## Design Process
 ### Provided Database ERD
-![image](https://user-images.githubusercontent.com/101907789/165870610-600bf5c3-9e13-453d-869e-212556e51850.png)
+<img src="https://user-images.githubusercontent.com/101907789/165870610-600bf5c3-9e13-453d-869e-212556e51850.png" width="450"></img>
 
 ## Acknowledgements
