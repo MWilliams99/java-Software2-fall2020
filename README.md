@@ -4,7 +4,7 @@
 Software 2 project that I completed in Fall 2020 for the C195 course at Western Governors University.  
 Every student is given the same set of requirements for this project, which can be found [here](../main/ProjectRequirements.md).
 
-This project was completed February 20th, 2021.
+This project was completed on February 20th, 2021.
 
 I used Java to code this project as that is what I chose to focus in during my Software Development degree. This project also includes javaFX to code the GUI fxml files and Javadoc to document the project code.  
 MySQL was used for the database connections for this project.
