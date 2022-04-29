@@ -32,7 +32,7 @@ A. Create a GUI-based application for the company in the scenario. Regarding you
     - When adding and updating an appointment, text fields are used to record the following data: Appointment_ID, title, description, location, contact, type, start date and time, end date and time, Customer_ID, and User_ID.
     - All of the original appointment information is displayed on the update form in local time zone.
     - All of the appointment fields can be updated except Appointment_ID, which must be disabled.
-  b. Write code that enables the user to view appointment schedules by month and week using a TableView and allows the user to choose between these two options using tabs or radio buttons for filtering appointments. Please include each of the following requirements as columns:
+    b. Write code that enables the user to view appointment schedules by month and week using a TableView and allows the user to choose between these two options using tabs or radio buttons for filtering appointments. Please include each of the following requirements as columns:
     - Appointment_ID
     - Title
     - Description
