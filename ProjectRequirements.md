@@ -1,28 +1,28 @@
 A. Create a GUI-based application for the company in the scenario. Regarding your file submission—the use of non-Java API libraries are not allowed with the exception of JavaFX SDK and MySQL JDBC Driver. If you are using the NetBeans IDE, the custom library for your JavaFX .jar files in your IDE must be named JavaFX.
 1. Create a log-in form with the following capabilities:
-- accepts a user ID and password and provides an appropriate error message
-- determines the user’s location (i.e., ZoneId) and displays it in a label on the log-in form
-- displays the log-in form in English or French based on the user’s computer language setting to translate all the text, labels, buttons, and errors on the form
-- automatically translates error control messages into English or French based on the user’s computer language setting
+  - accepts a user ID and password and provides an appropriate error message
+  - determines the user’s location (i.e., ZoneId) and displays it in a label on the log-in form
+  - displays the log-in form in English or French based on the user’s computer language setting to translate all the text, labels, buttons, and errors on the form
+  - automatically translates error control messages into English or French based on the user’s computer language setting
  
 2. Write code that provides the following customer record functionalities:
-- Customer records and appointments can be added, updated, and deleted.
-- When deleting a customer record, all of the customer’s appointments must be deleted first, due to foreign key constraints.
-- When adding and updating a customer, text fields are used to collect the following data: customer name, address, postal code, and phone number.
-- Customer IDs are auto-generated, and first-level division (i.e., states, provinces) and country data are collected using separate combo boxes.
+  - Customer records and appointments can be added, updated, and deleted.
+  - When deleting a customer record, all of the customer’s appointments must be deleted first, due to foreign key constraints.
+  - When adding and updating a customer, text fields are used to collect the following data: customer name, address, postal code, and phone number.
+  - Customer IDs are auto-generated, and first-level division (i.e., states, provinces) and country data are collected using separate combo boxes.
  
-- Note: The address text field should not include first-level division and country data. Please use the following examples to format addresses:
+  - Note: The address text field should not include first-level division and country data. Please use the following examples to format addresses:
 -- U.S. address: 123 ABC Street, White Plains
 -- Canadian address: 123 ABC Street, Newmarket
 -- UK address: 123 ABC Street, Greenwich, London
  
-- When updating a customer, the customer data autopopulates in the form.
-- Country and first-level division data is prepopulated in separate combo boxes or lists in the user interface for the user to choose. The first-level list should be filtered by the user’s selection of a country (e.g., when choosing U.S., filter so it only shows states).
-- All of the original customer information is displayed on the update form.
-- Customer_ID must be disabled.
-- All of the fields can be updated except for Customer_ID.
-- Customer data is displayed using a TableView, including first-level division data. A list of all the customers and their information may be viewed in a TableView, and updates of the data can be performed in text fields on the form.
-- When a customer record is deleted, a custom message should display in the user interface.
+  - When updating a customer, the customer data autopopulates in the form.
+  - Country and first-level division data is prepopulated in separate combo boxes or lists in the user interface for the user to choose. The first-level list should be filtered by the user’s selection of a country (e.g., when choosing U.S., filter so it only shows states).
+  - All of the original customer information is displayed on the update form.
+  - Customer_ID must be disabled.
+  - All of the fields can be updated except for Customer_ID.
+  - Customer data is displayed using a TableView, including first-level division data. A list of all the customers and their information may be viewed in a TableView, and updates of the data can be performed in text fields on the form.
+  - When a customer record is deleted, a custom message should display in the user interface.
  
 3. Add scheduling functionalities to the GUI-based application by doing the following:
 
