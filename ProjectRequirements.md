@@ -26,7 +26,7 @@ A. Create a GUI-based application for the company in the scenario. Regarding you
  
 3. Add scheduling functionalities to the GUI-based application by doing the following:
 
-  3a. Write code that enables the user to add, update, and delete appointments. The code should also include the following functionalities:
+  3. a Write code that enables the user to add, update, and delete appointments. The code should also include the following functionalities:
 - A contact name is assigned to an appointment using a drop-down menu or combo box.
 - A custom message is displayed in the user interface with the Appointment_ID and type of appointment canceled.
 - The Appointment_ID is auto-generated and disabled throughout the application.
