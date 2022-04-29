@@ -15,7 +15,7 @@ While it was not required, the instructors recommended using the DAO design patt
 This project has the student create a program connected to a database, that will display customers and appointments that the user can add, edit, and delete. The program first launches with a login screen that pulls usernames and passwords from the database. Once the user is logged in, the program displays a main form with tabs for *Customers*, *Appointments*, and *Reports*.
 - The *Customers* tab displays a table of customers already in the database, and includes 3 buttons allowing the user to add, edit, or delete customers.
 - The *Appointments* tab displays a table of appointments already in the database, and includes 3 buttons allowing the user to add, edit, or delete appointments.  
-Appointments rely on existing customers and must include a customer associated to it to be created. When a customer is deleted, all related appointments are also deleted.  
+Appointments rely on existing customers and must include a customer associated with it to be created. When a customer is deleted, all related appointments are also deleted.  
 Appointments may also only be created within business hours, and cannot overlap for the selected customer.
 - The *Reports* tab includes 3 tables displaying the required reports outlined in A.3.f. of the [Project Requirements](../main/ProjectRequirements.md).  
 The additional 3rd report I chose to create was a table showing a count of customers by first-level division for the selected country from a drop-down.
