@@ -24,7 +24,7 @@ A. Create a GUI-based application for the company in the scenario. Regarding you
   - Customer data is displayed using a TableView, including first-level division data. A list of all the customers and their information may be viewed in a TableView, and updates of the data can be performed in text fields on the form.
   - When a customer record is deleted, a custom message should display in the user interface.
  
-3. Add scheduling functionalities to the GUI-based application by doing the following:
+3. Add scheduling functionalities to the GUI-based application by doing the following:  
   a. Write code that enables the user to add, update, and delete appointments. The code should also include the following functionalities:
 - A contact name is assigned to an appointment using a drop-down menu or combo box.
 - A custom message is displayed in the user interface with the Appointment_ID and type of appointment canceled.
