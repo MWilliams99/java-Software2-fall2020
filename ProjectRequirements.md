@@ -25,6 +25,7 @@ Note: The address text field should not include first-level division and country
 - When a customer record is deleted, a custom message should display in the user interface.
  
 3. Add scheduling functionalities to the GUI-based application by doing the following:
+
 a. Write code that enables the user to add, update, and delete appointments. The code should also include the following functionalities:
 - A contact name is assigned to an appointment using a drop-down menu or combo box.
 - A custom message is displayed in the user interface with the Appointment_ID and type of appointment canceled.
