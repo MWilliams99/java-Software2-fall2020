@@ -34,31 +34,31 @@ A. Create a GUI-based application for the company in the scenario. Regarding you
     - All of the appointment fields can be updated except Appointment_ID, which must be disabled.
 
   b. Write code that enables the user to view appointment schedules by month and week using a TableView and allows the user to choose between these two options using tabs or radio buttons for filtering appointments. Please include each of the following requirements as columns:
-- Appointment_ID
-- Title
-- Description
-- Location
-- Contact
-- Type
-- Start Date and Time
-- End Date and Time
-- Customer_ID
+    - Appointment_ID
+    - Title
+    - Description
+    - Location
+    - Contact
+    - Type
+    - Start Date and Time
+    - End Date and Time
+    - Customer_ID
  
   c. Write code that enables the user to adjust appointment times. While the appointment times should be stored in Coordinated Universal Time (UTC), they should be automatically and consistently updated according to the local time zone set on the user’s computer wherever appointments are displayed in the application.
  
   Note: There are up to three time zones in effect. Coordinated Universal Time (UTC) is used for storing the time in the database, the user’s local time is used for display purposes, and Eastern Standard Time (EST) is used for the company’s office hours. Local time will be checked against EST business hours before they are stored in the database as UTC.
  
   d. Write code to implement input validation and logical error checks to prevent each of the following changes when adding or updating information; display a custom message specific for each error check in the user interface:
-- scheduling an appointment outside of business hours defined as 8:00 a.m. to 10:00 p.m. EST, including weekends
-- scheduling overlapping appointments for customers
-- entering an incorrect username and password
+    - scheduling an appointment outside of business hours defined as 8:00 a.m. to 10:00 p.m. EST, including weekends
+    - scheduling overlapping appointments for customers
+    - entering an incorrect username and password
  
   e. Write code to provide an alert when there is an appointment within 15 minutes of the user’s log-in. A custom message should be displayed in the user interface and include the appointment ID, date, and time. If the user does not have any appointments within 15 minutes of logging in, display a custom message in the user interface indicating there are no upcoming appointments.
 
   f. Write code that generates accurate information in each of the following reports and will display the reports in the user interface: 
-- the total number of customer appointments by type and month
-- a schedule for each contact in your organization that includes appointment ID, title, type and description, start date and time, end date and time, and customer ID
-- an additional report of your choice that is different from the two other required reports in this prompt and from the user log-in date and time stamp that will be tracked in part C
+    - the total number of customer appointments by type and month
+    - a schedule for each contact in your organization that includes appointment ID, title, type and description, start date and time, end date and time, and customer ID
+    - an additional report of your choice that is different from the two other required reports in this prompt and from the user log-in date and time stamp that will be tracked in part C
  
 B. Write at least two different lambda expressions to improve your code.
  
@@ -68,11 +68,11 @@ D. Provide descriptive Javadoc comments for at least 70 percent of the classes a
 Note: The comments on the lambda need to be located in the comments describing the method where it is located for it to export properly.
  
 E. Create a README.txt file that includes the following information:
-- title and purpose of the application
-- author, contact information, application version, and date
-- IDE including version number (e.g., IntelliJ Community 2020.01), full JDK of version 11 used (e.g., Java SE 11.0.4), and JavaFX version compatible with JDK 11 (e.g. JavaFX-SDK-11.0.2)
-- directions for how to run the program
-- a description of the additional report of your choice you ran in part A3f
+  - title and purpose of the application
+  - author, contact information, application version, and date
+  - IDE including version number (e.g., IntelliJ Community 2020.01), full JDK of version 11 used (e.g., Java SE 11.0.4), and JavaFX version compatible with JDK 11 (e.g. JavaFX-SDK-11.0.2)
+  - directions for how to run the program
+  - a description of the additional report of your choice you ran in part A3f
  
 F. Demonstrate professional communication in the content and presentation of your submission.
 
