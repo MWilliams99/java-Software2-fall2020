@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="765.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.mainFormController">
+   <children>
+      <TabPane prefHeight="770.0" prefWidth="900.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Customers">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="25.0" layoutY="25.0" text="Customers">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <TableView fx:id="customerTableView" layoutX="25.0" layoutY="60.0" prefHeight="625.0" prefWidth="850.0">
+                          <columns>
+                            <TableColumn fx:id="customerID" text="Customer ID" />
+                            <TableColumn fx:id="customerName" prefWidth="130.0" text="Name" />
+                              <TableColumn fx:id="customerAddress" prefWidth="175.0" text="Address" />
+                              <TableColumn fx:id="customerPostCode" prefWidth="110.0" text="Postal Code" />
+                              <TableColumn fx:id="customerPhone" prefWidth="125.0" text="Phone Number" />
+                              <TableColumn fx:id="customerDivID" text="Division ID" />
+                              <TableColumn fx:id="customerDivName" prefWidth="150.0" text="Division Name" />
+                          </columns>
+                        </TableView>
+                        <HBox alignment="BOTTOM_RIGHT" layoutX="25.0" layoutY="685.0" prefHeight="30.0" prefWidth="850.0" spacing="15.0">
+                           <children>
+                              <Button fx:id="customerAddButton" mnemonicParsing="false" onMouseClicked="#customerAdd" text="Add" />
+                              <Button fx:id="customerModifyButton" mnemonicParsing="false" onMouseClicked="#customerModify" text="Modify" />
+                              <Button fx:id="customerDeleteButton" mnemonicParsing="false" onMouseClicked="#customerDelete" text="Delete" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Appointments">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="25.0" layoutY="25.0" text="Appointments">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <TableView fx:id="appointmentTableView" layoutX="25.0" layoutY="60.0" prefHeight="625.0" prefWidth="850.0">
+                          <columns>
+                            <TableColumn fx:id="appointmentID" prefWidth="55.0" text="App. ID" />
+                            <TableColumn fx:id="appointmentTitle" prefWidth="50.0" text="Title" />
+                              <TableColumn fx:id="appointmentDesc" prefWidth="75.0" text="Description" />
+                              <TableColumn fx:id="appointmentLocation" prefWidth="60.0" text="Location" />
+                              <TableColumn fx:id="appointmentType" prefWidth="65.0" text="Type" />
+                              <TableColumn fx:id="appointmentContID" prefWidth="70.0" text="Contact ID" />
+                              <TableColumn fx:id="appointmentContName" prefWidth="95.0" text="Contact Name" />
+                              <TableColumn fx:id="appointmentContEmail" prefWidth="95.0" text="Contact Email" />
+                              <TableColumn fx:id="appointmentStart" prefWidth="100.0" text="Start Date/Time" />
+                              <TableColumn fx:id="appointmentEnd" prefWidth="100.0" text="End Date/Time" />
+                              <TableColumn fx:id="appointmentCustID" text="Customer ID" />
+                          </columns>
+                        </TableView>
+                        <HBox alignment="CENTER_RIGHT" layoutX="525.0" layoutY="23.0" prefHeight="30.0" prefWidth="350.0" spacing="15.0">
+                           <children>
+                              <RadioButton fx:id="allRadButton" mnemonicParsing="false" onMouseClicked="#appointmentAllFilter" selected="true" text="All">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="appointmentFilter" />
+                                 </toggleGroup></RadioButton>
+                              <RadioButton fx:id="monthRadButton" mnemonicParsing="false" onMouseClicked="#appointmentMonthFilter" text="Within the Next Month" toggleGroup="$appointmentFilter" />
+                              <RadioButton fx:id="weekRadButton" mnemonicParsing="false" onMouseClicked="#appointmentWeekFilter" text="Within the Next Week" toggleGroup="$appointmentFilter" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="BOTTOM_RIGHT" layoutX="25.0" layoutY="685.0" prefHeight="30.0" prefWidth="850.0" spacing="15.0">
+                           <children>
+                              <Button fx:id="appointmentAddButton" mnemonicParsing="false" onMouseClicked="#appointmentAdd" text="Add" />
+                              <Button fx:id="appointmentModifyButton" mnemonicParsing="false" onMouseClicked="#appointmentModify" text="Modify" />
+                              <Button fx:id="appointmentDeleteButton" mnemonicParsing="false" onMouseClicked="#appointmentDelete" text="Delete" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Reports">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="25.0" layoutY="25.0" text="Reports">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutX="25.0" layoutY="50.0" prefHeight="215.0" prefWidth="850.0">
+                           <children>
+                              <Label layoutY="10.0" text="Number of Appointments by Type and Month in the Current Year">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                              <TableView fx:id="reportAppTableView" layoutY="30.0" prefHeight="175.0" prefWidth="850.0">
+                                <columns>
+                                  <TableColumn fx:id="reportAppMonth" prefWidth="175.0" text="Month" />
+                                  <TableColumn fx:id="reportAppType" prefWidth="500.0" text="Appointment Type" />
+                                    <TableColumn fx:id="reportAppCount" prefWidth="175.0" text="Count" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="25.0" layoutY="275.0" prefHeight="215.0" prefWidth="850.0">
+                           <children>
+                              <Label layoutY="10.0" text="Appointments Schedule by Contact">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                              <TableView fx:id="reportScheduleTableView" layoutY="30.0" prefHeight="175.0" prefWidth="850.0">
+                                <columns>
+                                  <TableColumn fx:id="reportScheduleAppID" prefWidth="105.0" text="Appointment ID" />
+                                  <TableColumn fx:id="reportScheduleTitle" prefWidth="125.0" text="Title" />
+                                    <TableColumn fx:id="reportScheduleType" prefWidth="125.0" text="Type" />
+                                    <TableColumn fx:id="reportScheduleDesc" prefWidth="215.0" text="Description" />
+                                    <TableColumn fx:id="reportScheduleStart" prefWidth="100.0" text="Start Date/Time" />
+                                    <TableColumn fx:id="reportScheduleEnd" prefWidth="100.0" text="End Date/Time" />
+                                    <TableColumn fx:id="reportScheduleCustID" text="Customer ID" />
+                                </columns>
+                              </TableView>
+                              <ComboBox fx:id="reportSchedulePicker" layoutX="700.0" layoutY="5.0" onAction="#reportSchedulePicked" prefWidth="150.0" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="25.0" layoutY="500.0" prefHeight="215.0" prefWidth="850.0">
+                           <children>
+                              <Label layoutY="10.0" text="Number of Customers by Country and Division">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                              <TableView fx:id="reportCustomerTableView" layoutY="30.0" prefHeight="175.0" prefWidth="850.0">
+                                <columns>
+                                  <TableColumn fx:id="reportCustomerCountry" prefWidth="175.0" text="Country" />
+                                  <TableColumn fx:id="reportCustomerDivision" prefWidth="500.0" text="First-Level Division" />
+                                    <TableColumn fx:id="reportCustomerCount" prefWidth="175.0" text="Count" />
+                                </columns>
+                              </TableView>
+                              <ComboBox fx:id="reportCustomerPicker" layoutX="700.0" layoutY="5.0" onAction="#reportCustomerPicked" prefWidth="150.0" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
